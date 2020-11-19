@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      Do I Need A Jacket?
+    </h1>
+    <div class="card" style="width: 40rem;" id="searchBar">
+      <div class="card-body">
+        <form id="search-form" id="search-form">
+          <div class="row">
+            <div class="col-5">
+              <input type="search" placeholder="Enter a city..." class="form-control" id="search-input" autofocus="on"
+                autocomplete="off" />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="form-control btn btn-info">
+            </div>
+            <div class="col-4">
+              <button type="submit" id="currentButton" class="btn btn-warning mb-2">Current Location</button>
+            </div>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <section class="todays-weather">
+    <div class="card" style="width: 50rem;">
+      <div class="card-header" id="cityName"> <span>BRONX, NYC, USA</span>
+      </div>
+      <div class="card-body text-center">
+        <div class="row align-items-start">
+          <div class="col-4">
+            <i id="todayIcon" class="fas fa-cloud-rain"></i>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li><span id="temperature">55° F</span></li>
+              <br />
+              <li><span class="atmosphere">Drizzle</span></li>
+              <li><small><span class="jacket">Bring a Jacket</span></small></li>
+          </div>
+          <div class="col-5">
+            <ul>
+              <li><span id="date">10:23 PM</span></li>
+              <li><span class="current-high"> HIGH: 61°F </span></li>
+              <li><span class="current-low"> LOW: 55°F</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="weather-ahead">
+    <div class="card-group" style="width: 55rem;">
+      <div class="card">
+        <div class="card-header">Tomorrow 10/13</div>
+        <div class="card-body">
+          <h5 class="card-title">66° / 54°</h5>
+          <i class="fas fa-cloud-rain"></i>
+          <p class="card-text"><small class="text-muted">Jacket</small></p>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Wednesday 10/14</div>
+        <div class="card-body">
+          <h5 class="card-title">72° / 55°</h5>
+          <i class="fas fa-sun"></i>
+          <p class="card-text"><small class="text-muted">No jacket</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Thursday 10/15</div>
+        <div class="card-body">
+          <h5 class="card-title">75° / 61°</h5>
+          <i class="fas fa-sun"></i>
+          <p class="card-text"><small class="text-muted">No jacket</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Friday 10/16</div>
+        <div class="card-body">
+          <h5 class="card-title">64° / 52°</h5>
+          <i class="fas fa-cloud-rain"></i>
+          <p class="card-text"><small class="text-muted">Jacket</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Saturday 10/17</div>
+        <div class="card-body">
+          <h5 class="card-title">61° / 46°</h5>
+          <i class="fas fa-cloud-rain"></i>
+          <p class="card-text"><small class="text-muted">Jacket</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="https://kit.fontawesome.com/45db74b1bd.js" crossorigin="anonymous"></script>
+  <script src="src/script.js">
+  </script>
+</body>
+
+</html>
