@@ -25,6 +25,9 @@ a {
   color: #407188;
 }
 
+p {
+  text-align: unset;
+}
 .atmosphere {
   font-weight: bold;
 }
@@ -114,7 +117,4 @@ a {
 #temperature {
   font-size: 36px;
   font-weight: bold;
-  position: relative;
-  right: -10px;
-  bottom: -10px;
 }
